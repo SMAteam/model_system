@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="874c1cb6-b890-4cb0-98e1-e08fdc44bc93" name="灾害分析">
+        <fileTransfer rootFolder="/home/ubuntu" accessType="SFTP" host="49.232.229.126" port="22" sshConfigId="1ad08dea-1ea5-42f5-93a4-cce8a3e5837a" sshConfig="ubuntu@49.232.229.126:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
