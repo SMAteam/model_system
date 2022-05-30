@@ -935,27 +935,28 @@ def countMongo():
     db = client.admin
     db.authenticate('root', 'buptweb007')
     db = client.SocialMedia
-    # 数据总量
-    start_time = datetime.datetime(2021, 11, 13, 0, 0)
-
-    end_time = datetime.datetime(2021, 11, 30, 0, 0)
-    count = db.posts.find({
-        "post_time": {"$gte": start_time, "$lt": end_time},
-        "task": "1",
-        "media": "1"
-    }).count()
-    return count
+    # # 数据总量
+    # start_time = datetime.datetime(2021, 11, 13, 0, 0)
+    #
+    # end_time = datetime.datetime(2021, 11, 30, 0, 0)
+    # count = db.posts.find({
+    #     "post_time": {"$gte": start_time, "$lt": end_time},
+    #     "task": "1",
+    #     "media": "1"
+    # }).count()
+    # return count
     # 微博数据量
-    count = db.posts.find({
-        "task": "1",
-        "media": "1"
-    }).count()
-    return count
+    # count = db.posts.find({
+    #     "task": "1",
+    #     "media": "1"
+    # }).count()
+    # return count
     # 新闻数据量
     count = db.posts.find({
         "task": "1",
         "media": "2"
     }).count()
+    return count
 
 def buildExperiment():
     logger.info("开始计算热度")

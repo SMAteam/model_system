@@ -21,7 +21,7 @@ import logging
 def test(request):
     # earthquakeDetect()
     # redisCache()
-    return HttpResponse()
+    return HttpResponse(countMongo())
 # Create your views here.
 def test2(request):
 
@@ -39,8 +39,8 @@ def test2(request):
     #　return HttpResponse(json.dumps(countMongo(), ensure_ascii=False))
     # return HttpResponse(json.dumps(testNews(), ensure_ascii=False))
     # n = testMongo()
-    timeline()
-    return HttpResponse("success")
+    # timeline()
+    return HttpResponse(countMongo())
     # return HttpResponse(countMongo())
 
 def webAddHot(request):
